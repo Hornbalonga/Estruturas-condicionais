@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+int num, div, rest;
+
+printf("Digite um número Inteiro: \n");
+scanf("%d", &num);
+  
+div = num % 2;
+rest = div;
+if (rest == 0)
+{
+printf("Número Par", rest);
+}
+else 
+{
+printf("Número Não Par", rest);
+}
+return 0;
+}
