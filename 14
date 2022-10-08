@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+
+int time1, time2, aposta1, aposta2;
+printf("digite o resultado apostado do primeiro time");
+  scanf("%d",& aposta1);
+
+printf("digite o resultado apostado do segundo time");
+  scanf("%d", & aposta2);
+  
+printf("digite o resultado  do primeiro time");
+  scanf("%d",& time1);
+  
+printf("digite o resultado  do segundo time");
+  scanf("%d",& time2);
+
+  printf("placar %dx%d\naposta %dx%d\n",time1,time2,aposta1,aposta2);
+
+  if(aposta1 == time1 && aposta2 == time2){
+    printf("Acertou o vencedor e o número de gols de ambos os times., 20 pontos");
+  }
+  if(aposta1 > time1  && aposta2 == time2){
+    printf("Não acertou o vencedor, mas acertou o número de gols do segundo time. 10 pontos");
+    }
+ if(aposta1 == time1 && aposta2 > time2){
+    printf("Não acertou o vencedor, mas acertou o número de gols do primeiro time. 10 pontos");
+   }
+if(aposta1 < time1 && aposta2 < time2){
+  printf("Não acertou o vencedor e nem o número de gols dos times. 0 pontos");
+  }
+if(aposta1 == time1 ){
+
+  printf("Acertou o vencedor e o número de gols do primeiro time.15 pontos");
+}
+if(aposta1 >time1 || aposta2 >time2){
+  printf("Acertou o vencedor, mas não acertou o número de gols dos times. 10 pontos");
+}
+  return 0;
+}
