@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+
+   int km,moto,mu;
+    printf("insira a velocidade maxima da avenida em KM:\n");
+    scanf("%d",&km);
+    printf("agora, a velocidade do motorista:\n");
+    scanf("%d", &moto);
+    mu = (moto-km)*5
+    ;
+    if(km < moto){
+
+        printf("voce passou da velocidade, MULTADO\n R$%d",mu);
+
+}else{
+
+        printf("pasou de boa");
+
+}
+
+    return 0;
+}
