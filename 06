@@ -1,0 +1,41 @@
+#include<stdlib.h>
+#include<stdio.h>
+
+int main(){
+float x, y, z;
+    
+printf("Digite o primeiro número:\n");
+  scanf("%f", &x);
+
+printf("Digite o segundo número:\n");
+  scanf("%f", &y);
+
+printf("Digite o terceiro número:\n");
+  scanf("%f", &z);
+
+if ((x > y) && (x > z) && (y > z)){
+  printf("\n");
+  printf("Maior %.2f\n", x);
+  printf("Menor %.2f\n", z);
+  printf("Médio %.2f\n", y);
+}
+if((y > x) && (y > z) && (x > z)){
+  printf("\n");
+  printf("Maior %.2f\n", y);
+  printf("Menor %.2f\n", z);
+  printf("Médio %.2f\n", x);
+}
+if ((z > x) && (z > y) && (x > y)){
+  printf("\n");
+  printf("Maior %.2f\n", z);
+  printf("Menor %.2f\n", y);
+  printf("Médio %.2f\n", x);
+}
+if ((y > x) && (y > z) && (z > x)){
+  printf("\n");
+ printf("Maior %.2f\n", y);
+ printf("Menor %.2f\n", x);
+ printf("Médio %.2f\n", z); 
+}
+    return 0;
+}
