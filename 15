@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void){
+
+    float base;
+    printf("Instrução: Digite 1620.16 em vez de 1.620.16\n");
+    printf("\n");
+    printf("Digite a base de cálculo: \n");
+    scanf("%f", &base);
+
+    if(base > 1637.11 && base <= 2453.50){
+        printf("%.2f", base * 0.075 - 122.78);
+    }
+
+    if(base > 2453.51 && base <= 3271.38){
+        printf("Imposto devido %.2f", base * 0.15 - 306.80);
+    }
+
+    if(base > 3271.38 && base <= 4087.65){
+        printf("Imposto devido %.2f", base * 0.15 - 306.80);
+    }
+
+    if(base > 4087.65){
+        printf("Imposto devido %.2f", base * 0.275 - 756.53);
+    }
+
+  return 0;
+}
