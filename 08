@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(void) {
+float n1, n2, n3, media, notafinal;
+
+  printf("Digite as 3 notas: \n");
+  scanf("%f %f %f", &n1, &n2, &n3);
+printf("\n");
+  
+  media = (n1 + n2 + n3) / 3;
+  
+  printf("Sua média é %2.f. \n", media);
+  printf("\n");
+  
+  if (media >= 70){
+    printf("Aprovado (a)!");
+  }
+  else if((media >= 40) && (media < 69)){
+    printf("Você esta na final! \n");
+    printf("\n");
+    printf("Digite a nota da Final: \n");
+    scanf("%f", &notafinal);
+    
+    media = media + notafinal;
+    
+    if (media >= 100){
+      printf("Aprovado(a) na Final!");
+    }
+       else{
+    printf("Reprovado (a)!");
+    }
+  }
+ else
+ {
+  printf("Reprovado(a)!");
+ }
+
+  return 0;
