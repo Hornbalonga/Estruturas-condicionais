@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+float n1, n2, resul;
+char oper;
+
+
+printf("Qual operação você deseja realizar?\n+ ou - ou / ou *: \n");
+printf("Em caso de Divisão, informar primeiro o número a ser divido:\nEm caso de Subtração, informar primeiro o número a ser subtraído:\n");
+scanf("%c", &oper);
+
+printf("Digite o primeiro número:\n");
+scanf("%f", &n1);
+printf("Digite o segundo número:\n");
+scanf("%f", &n2);
+
+if (oper == '+'){
+resul = n1 + n2;
+printf("O resultado da soma é %.2f", resul);
+}
+else if (oper == '-'){
+  resul = n1 - n2;
+  printf("O resultado da subtração é %.2f", resul);
+}
+else if (oper == '/'){
+  resul = n1 / n2;
+  printf("O resultado da divisão é %.2f", resul);
+}
+else if (oper == '*'){
+  resul = n1 * n2;
+  printf("O resultado da multiplicação é %.2f", resul);
+}
+  return 0;
+}
