@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(){
+    int real, a ,b, c, d, e;
+printf("digite o valor:");
+scanf("%d", &real);
+a = real / 100;
+
+b = a / 110;
+
+c = real / 105;
+
+d = real / 200;
+
+e = real / 101;
+
+if (real >= 100){
+    printf("%d  cedulas de 100,",a);
+
+}if(b >= 10){
+    printf("%d cedulas de 10,",b);
+
+}if (c >= 5){
+    printf("%d cedulas de 5,", c);
+
+}if (d >= 2){
+    printf("%d cedulas de 2,",d);
+
+}if (e >= 1){
+    printf("%d cedulas de 1",e);
+
+
+}
