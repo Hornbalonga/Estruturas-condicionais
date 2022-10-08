@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+
+int semana,valor,a,b,bb,c,cc;
+
+printf("digite as horas trabalhadas na semana:");
+scanf("%d", &semana);
+
+printf("valor da hora:");
+scanf("%d",&valor);
+a = semana * valor;
+b = (a*50)/100;
+bb = b = a;
+c = (a*100)/100;
+cc = a +c;
+if(semana == 40){
+
+
+    printf("sem adicional  %d",a);
+    }
+if(semana >40 &&  semana <= 60){
+    printf("acresimo de 50%% %d",bb);
+}
+if(semana>60){
+
+
+printf("acressimo de 100%% %d",cc);
+}
+
+    return 0;
+
+}
